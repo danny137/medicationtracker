@@ -1,4 +1,5 @@
-Medication Tracker
+<h1>Medication Tracker</h1>
+
 A Python 3.11 GUI application that keeps track of medication deliveries and doses using tkinter and csv.
 
 This is a medication tracker for the UKMedicalCannabis community however could be easily modified to track other medication too!
@@ -6,7 +7,8 @@ This is a medication tracker for the UKMedicalCannabis community however could b
 It requires Python3.11 and can run without any external packages.
 
 
-Installation
+<h2>Installation</h2>
+
 	To install Python 3.11, follow the instructions below based on your operating system:
 
 	MacOS
@@ -38,9 +40,14 @@ Installation
 		Navigate to the repository using the Command Prompt or Terminal.
 		Run the script using python3 main.py.
 
-	Usage
-		The Medication Tracker application has 4 tabs:
-		New Delivery: Allows the user to add a new medication delivery and its quantity. The delivery will be added to the medication.csv file.
-		Dose: Allows the user to take a dose of a medication and records the date and time in the doses.csv file.
-		View Medications: Shows a list of all the medications and their respective quantities stored in the medication.csv file.
-		View Doses: Shows a list of all the doses taken and their respective dates and times stored in the doses.csv file.
+<h2>Usage</h2>
+	The Medication Tracker application has 4 tabs:
+	
+	New Delivery: Allows the user to add a new medication delivery and its quantity. The delivery will be added to the medication.csv file.
+	
+	Dose: Allows the user to take a dose of a medication and records the date and time in the doses.csv file.
+	
+	View Medications: Shows a list of all the medications and their respective quantities stored in the medication.csv file.
+	
+	View Doses: Shows a list of all the doses taken and their respective dates and times stored in the doses.csv file.
+	
