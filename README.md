@@ -44,6 +44,8 @@ It requires Python3.11 and can run without any external packages.
 		Run the script using python3 main.py.
 
 <h2>Usage</h2>
+	To run, execute `python main.py` in Command Prompt or Terminal, respective of operating system, from within the `medicationtracker` directory.
+	
 	The Medication Tracker application has 4 tabs:
 	
 	New Delivery: Allows the user to add a new medication delivery and its quantity. The delivery will be added to the medication.csv file.
