@@ -21,13 +21,16 @@ It requires Python3.11 and can run without any external packages.
 			Open Terminal (you can find it in Applications > Utilities)
 			Copy and paste the following command into Terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 			Press enter and follow the instructions to install Homebrew.
+		
+		When python is installed, to confirm the installation, open the Terminal and run python3 -V. This should output the version of Python installed, which should be Python 3.11.
 
 	Linux
 		Open terminal
 		Run the following command based on your distribution:
-		Debian/Ubuntu: sudo apt-get install python3.11
-		Fedora: sudo dnf install python3.11
-		Arch Linux: sudo pacman -S python3.11
+			Debian/Ubuntu: sudo apt-get install python3.11
+			Fedora: sudo dnf install python3.11
+			Arch Linux: sudo pacman -S python3.11
+			
 		To confirm the installation, run python3 -V. This should output the version of Python installed, which should be Python 3.11.
 
 	Windows
