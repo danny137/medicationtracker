@@ -4,7 +4,7 @@ A Python 3.11 GUI application that keeps track of medication deliveries and dose
 
 This is a medication tracker for the UKMedicalCannabis community however could be easily modified to track other medication too!
 
-It requires Python3.11 and can run without any external packages.
+It requires Python3.11 to run from source and can run without any external packages.
 
 
 <h2>Installation</h2>
