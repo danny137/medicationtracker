@@ -44,7 +44,7 @@ It requires Python3.11 and can run without any external packages.
 		Run the script using python3 main.py.
 
 <h2>Usage</h2>
-	To run, execute `python main.py` in Command Prompt or Terminal, respective of operating system, from within the `medicationtracker` directory.
+	To run, execute `python main.py` in Command Prompt or Terminal, respective of operating system, from within the `medicationtracker` directory. Alternatively, on any OS, you can go into the `dist/medTrack` directory and create a shortcut/alias for the executable and keep that on your desktop. It is important to make a shortcut/alias if you wish to use it this way as all of the core Python files are within this directory. Doing it this way requires no installation of tools as it is included within the `dist` directory.
 	
 	The Medication Tracker application has 4 tabs:
 	
