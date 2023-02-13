@@ -72,8 +72,10 @@ class App(tk.Tk):
 			writer = csv.writer(f)
 			for dose in self.doses:
 				if dose[2] not in existing_doses:
+					#f.write('\n')
 					writer.writerow(dose)
 					existing_doses.add(dose[2])
+
 
 	def create_widgets(self):
 		self.tab_control = ttk.Notebook(self)
