@@ -9,6 +9,8 @@ It requires Python3.11 and can run without any external packages.
 
 <h2>Installation</h2>
 
+	Either download the release on the right under `Releases` or follow the steps below.
+
 	To install Python 3.11, follow the instructions below based on your operating system:
 
 	MacOS
