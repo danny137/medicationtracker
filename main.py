@@ -24,6 +24,19 @@ class App(tk.Tk):
 		self.create_view_doses_tab()
 		self.tab_control.grid(row=0, column=0, columnspan=2, pady=10)
 
+	def rem_dupes(self):
+		unique_tuples = []
+		seen = set()
+
+		for tup in self.doses:
+			if tup[2] not in seen:
+				unique_tuples.append(tup)
+				seen.add(tup)
+
+		self.doses = []
+		for _ in seen:
+			self.doses.append(_)
+
 	def read_file(self):
 		try:
 			with open("medication.csv", "r") as f:
@@ -47,6 +60,8 @@ class App(tk.Tk):
 				reader = csv.reader(f)
 				for row in reader:
 					self.doses.append((row[0], row[1], row[2]))
+
+				self.rem_dupes()
 
 		except FileNotFoundError:
 			with open("doses.csv", "w") as f:
@@ -125,6 +140,7 @@ class App(tk.Tk):
 			messagebox.showerror("Error", "Please enter a medication and quantity")
 
 	def create_dose_tab(self):
+		self.doses = res = [*set(self.doses)]
 		self.dose_tab_label = ttk.Label(self.dose_tab, text="Dose")
 		self.dose_tab_label.grid(row=0, column=0, columnspan=2, pady=10)
 		self.dose_tab_medication_label = ttk.Label(self.dose_tab, text="Medication")
@@ -151,6 +167,7 @@ class App(tk.Tk):
 						if res:
 							del self.medications[medication]
 							messagebox.showinfo("Success", "Medication deleted successfully")
+					self.rem_dupes()
 					self.write_file()
 					self.doses.append((medication, quantity, datetime.now().strftime("%d/%m/%Y %H:%M:%S")))
 					self.write_doses_to_file()
@@ -175,6 +192,7 @@ class App(tk.Tk):
 		self.view_doses_tab_treeview.column("#0", width=150)
 		self.view_doses_tab_treeview.column("dosequantity", width=150)
 		self.view_doses_tab_treeview.column("datetime", width=150)
+		self.rem_dupes()
 		self.doses = sorted(self.doses, key=lambda x: x[2], reverse=True)
 		for dose in self.doses:
 			self.view_doses_tab_treeview.insert("", "end", text=dose[0], values=(f"{dose[1]}g",dose[2]))
