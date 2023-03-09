@@ -6,10 +6,9 @@ This is a medication tracker for the UKMedicalCannabis community however could b
 
 It requires Python3.11 to run from source and can run without any external packages.
 
+Either download the release on the right under `Releases` or follow the steps below.
 
 <h2>Installation</h2>
-
-	Either download the release on the right under `Releases` or follow the steps below.
 
 	To install Python 3.11, follow the instructions below based on your operating system:
 
